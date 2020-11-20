@@ -1,0 +1,307 @@
+//
+// robotos for Bootstrap
+//
+// Since icons are fonts, they can be placed anywhere text is placed and are
+// thus automatically sized to match the surrounding child. To use, create an
+// inline element with the appropriate classes, like so:
+//
+// <a href="#"><span class="roboto roboto-star"></span> Star</a>
+
+@at-root {
+  // Import the fonts
+  @font-face {
+    font-family: 'Roboto';
+    src: url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$icon-font-path}#{$icon-font-name}.eot'), '#{$icon-font-path}#{$icon-font-name}.eot'));
+    src: url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$icon-font-path}#{$icon-font-name}.eot?#iefix'), '#{$icon-font-path}#{$icon-font-name}.eot?#iefix')) format('embedded-opentype'),
+         url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$icon-font-path}#{$icon-font-name}.woff2'), '#{$icon-font-path}#{$icon-font-name}.woff2')) format('woff2'),
+         url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$icon-font-path}#{$icon-font-name}.woff'), '#{$icon-font-path}#{$icon-font-name}.woff')) format('woff'),
+         url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$icon-font-path}#{$icon-font-name}.ttf'), '#{$icon-font-path}#{$icon-font-name}.ttf')) format('truetype'),
+         url(if($bootstrap-sass-asset-helper, twbs-font-path('#{$icon-font-path}#{$icon-font-name}.svg##{$icon-font-svg-id}'), '#{$icon-font-path}#{$icon-font-name}.svg##{$icon-font-svg-id}')) format('svg');
+  }
+}
+
+// Catchall baseclass
+.roboto {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// Individual icons
+.roboto-asterisk               { &:before { content: "\002a"; } }
+.roboto-plus                   { &:before { content: "\002b"; } }
+.roboto-euro,
+.roboto-eur                    { &:before { content: "\20ac"; } }
+.roboto-minus                  { &:before { content: "\2212"; } }
+.roboto-cloud                  { &:before { content: "\2601"; } }
+.roboto-envelope               { &:before { content: "\2709"; } }
+.roboto-pencil                 { &:before { content: "\270f"; } }
+.roboto-glass                  { &:before { content: "\e001"; } }
+.roboto-music                  { &:before { content: "\e002"; } }
+.roboto-search                 { &:before { content: "\e003"; } }
+.roboto-heart                  { &:before { content: "\e005"; } }
+.roboto-star                   { &:before { content: "\e006"; } }
+.roboto-star-empty             { &:before { content: "\e007"; } }
+.roboto-user                   { &:before { content: "\e008"; } }
+.roboto-film                   { &:before { content: "\e009"; } }
+.roboto-th-large               { &:before { content: "\e010"; } }
+.roboto-th                     { &:before { content: "\e011"; } }
+.roboto-th-list                { &:before { content: "\e012"; } }
+.roboto-ok                     { &:before { content: "\e013"; } }
+.roboto-remove                 { &:before { content: "\e014"; } }
+.roboto-zoom-in                { &:before { content: "\e015"; } }
+.roboto-zoom-out               { &:before { content: "\e016"; } }
+.roboto-off                    { &:before { content: "\e017"; } }
+.roboto-signal                 { &:before { content: "\e018"; } }
+.roboto-cog                    { &:before { content: "\e019"; } }
+.roboto-trash                  { &:before { content: "\e020"; } }
+.roboto-home                   { &:before { content: "\e021"; } }
+.roboto-file                   { &:before { content: "\e022"; } }
+.roboto-time                   { &:before { content: "\e023"; } }
+.roboto-road                   { &:before { content: "\e024"; } }
+.roboto-download-alt           { &:before { content: "\e025"; } }
+.roboto-download               { &:before { content: "\e026"; } }
+.roboto-upload                 { &:before { content: "\e027"; } }
+.roboto-inbox                  { &:before { content: "\e028"; } }
+.roboto-play-circle            { &:before { content: "\e029"; } }
+.roboto-repeat                 { &:before { content: "\e030"; } }
+.roboto-refresh                { &:before { content: "\e031"; } }
+.roboto-list-alt               { &:before { content: "\e032"; } }
+.roboto-lock                   { &:before { content: "\e033"; } }
+.roboto-flag                   { &:before { content: "\e034"; } }
+.roboto-headphones             { &:before { content: "\e035"; } }
+.roboto-volume-off             { &:before { content: "\e036"; } }
+.roboto-volume-down            { &:before { content: "\e037"; } }
+.roboto-volume-up              { &:before { content: "\e038"; } }
+.roboto-qrcode                 { &:before { content: "\e039"; } }
+.roboto-barcode                { &:before { content: "\e040"; } }
+.roboto-tag                    { &:before { content: "\e041"; } }
+.roboto-tags                   { &:before { content: "\e042"; } }
+.roboto-book                   { &:before { content: "\e043"; } }
+.roboto-bookmark               { &:before { content: "\e044"; } }
+.roboto-print                  { &:before { content: "\e045"; } }
+.roboto-camera                 { &:before { content: "\e046"; } }
+.roboto-font                   { &:before { content: "\e047"; } }
+.roboto-bold                   { &:before { content: "\e048"; } }
+.roboto-italic                 { &:before { content: "\e049"; } }
+.roboto-text-height            { &:before { content: "\e050"; } }
+.roboto-text-width             { &:before { content: "\e051"; } }
+.roboto-align-left             { &:before { content: "\e052"; } }
+.roboto-align-center           { &:before { content: "\e053"; } }
+.roboto-align-right            { &:before { content: "\e054"; } }
+.roboto-align-justify          { &:before { content: "\e055"; } }
+.roboto-list                   { &:before { content: "\e056"; } }
+.roboto-indent-left            { &:before { content: "\e057"; } }
+.roboto-indent-right           { &:before { content: "\e058"; } }
+.roboto-facetime-video         { &:before { content: "\e059"; } }
+.roboto-picture                { &:before { content: "\e060"; } }
+.roboto-map-marker             { &:before { content: "\e062"; } }
+.roboto-adjust                 { &:before { content: "\e063"; } }
+.roboto-tint                   { &:before { content: "\e064"; } }
+.roboto-edit                   { &:before { content: "\e065"; } }
+.roboto-share                  { &:before { content: "\e066"; } }
+.roboto-check                  { &:before { content: "\e067"; } }
+.roboto-move                   { &:before { content: "\e068"; } }
+.roboto-step-backward          { &:before { content: "\e069"; } }
+.roboto-fast-backward          { &:before { content: "\e070"; } }
+.roboto-backward               { &:before { content: "\e071"; } }
+.roboto-play                   { &:before { content: "\e072"; } }
+.roboto-pause                  { &:before { content: "\e073"; } }
+.roboto-stop                   { &:before { content: "\e074"; } }
+.roboto-forward                { &:before { content: "\e075"; } }
+.roboto-fast-forward           { &:before { content: "\e076"; } }
+.roboto-step-forward           { &:before { content: "\e077"; } }
+.roboto-eject                  { &:before { content: "\e078"; } }
+.roboto-chevron-left           { &:before { content: "\e079"; } }
+.roboto-chevron-right          { &:before { content: "\e080"; } }
+.roboto-plus-sign              { &:before { content: "\e081"; } }
+.roboto-minus-sign             { &:before { content: "\e082"; } }
+.roboto-remove-sign            { &:before { content: "\e083"; } }
+.roboto-ok-sign                { &:before { content: "\e084"; } }
+.roboto-question-sign          { &:before { content: "\e085"; } }
+.roboto-info-sign              { &:before { content: "\e086"; } }
+.roboto-screenshot             { &:before { content: "\e087"; } }
+.roboto-remove-circle          { &:before { content: "\e088"; } }
+.roboto-ok-circle              { &:before { content: "\e089"; } }
+.roboto-ban-circle             { &:before { content: "\e090"; } }
+.roboto-arrow-left             { &:before { content: "\e091"; } }
+.roboto-arrow-right            { &:before { content: "\e092"; } }
+.roboto-arrow-up               { &:before { content: "\e093"; } }
+.roboto-arrow-down             { &:before { content: "\e094"; } }
+.roboto-share-alt              { &:before { content: "\e095"; } }
+.roboto-resize-full            { &:before { content: "\e096"; } }
+.roboto-resize-small           { &:before { content: "\e097"; } }
+.roboto-exclamation-sign       { &:before { content: "\e101"; } }
+.roboto-gift                   { &:before { content: "\e102"; } }
+.roboto-leaf                   { &:before { content: "\e103"; } }
+.roboto-fire                   { &:before { content: "\e104"; } }
+.roboto-eye-open               { &:before { content: "\e105"; } }
+.roboto-eye-close              { &:before { content: "\e106"; } }
+.roboto-warning-sign           { &:before { content: "\e107"; } }
+.roboto-plane                  { &:before { content: "\e108"; } }
+.roboto-calendar               { &:before { content: "\e109"; } }
+.roboto-random                 { &:before { content: "\e110"; } }
+.roboto-comment                { &:before { content: "\e111"; } }
+.roboto-magnet                 { &:before { content: "\e112"; } }
+.roboto-chevron-up             { &:before { content: "\e113"; } }
+.roboto-chevron-down           { &:before { content: "\e114"; } }
+.roboto-retweet                { &:before { content: "\e115"; } }
+.roboto-shopping-cart          { &:before { content: "\e116"; } }
+.roboto-folder-close           { &:before { content: "\e117"; } }
+.roboto-folder-open            { &:before { content: "\e118"; } }
+.roboto-resize-vertical        { &:before { content: "\e119"; } }
+.roboto-resize-horizontal      { &:before { content: "\e120"; } }
+.roboto-hdd                    { &:before { content: "\e121"; } }
+.roboto-bullhorn               { &:before { content: "\e122"; } }
+.roboto-bell                   { &:before { content: "\e123"; } }
+.roboto-certificate            { &:before { content: "\e124"; } }
+.roboto-thumbs-up              { &:before { content: "\e125"; } }
+.roboto-thumbs-down            { &:before { content: "\e126"; } }
+.roboto-hand-right             { &:before { content: "\e127"; } }
+.roboto-hand-left              { &:before { content: "\e128"; } }
+.roboto-hand-up                { &:before { content: "\e129"; } }
+.roboto-hand-down              { &:before { content: "\e130"; } }
+.roboto-circle-arrow-right     { &:before { content: "\e131"; } }
+.roboto-circle-arrow-left      { &:before { content: "\e132"; } }
+.roboto-circle-arrow-up        { &:before { content: "\e133"; } }
+.roboto-circle-arrow-down      { &:before { content: "\e134"; } }
+.roboto-globe                  { &:before { content: "\e135"; } }
+.roboto-wrench                 { &:before { content: "\e136"; } }
+.roboto-tasks                  { &:before { content: "\e137"; } }
+.roboto-filter                 { &:before { content: "\e138"; } }
+.roboto-briefcase              { &:before { content: "\e139"; } }
+.roboto-fullscreen             { &:before { content: "\e140"; } }
+.roboto-dashboard              { &:before { content: "\e141"; } }
+.roboto-paperclip              { &:before { content: "\e142"; } }
+.roboto-heart-empty            { &:before { content: "\e143"; } }
+.roboto-link                   { &:before { content: "\e144"; } }
+.roboto-phone                  { &:before { content: "\e145"; } }
+.roboto-pushpin                { &:before { content: "\e146"; } }
+.roboto-usd                    { &:before { content: "\e148"; } }
+.roboto-gbp                    { &:before { content: "\e149"; } }
+.roboto-sort                   { &:before { content: "\e150"; } }
+.roboto-sort-by-alphabet       { &:before { content: "\e151"; } }
+.roboto-sort-by-alphabet-alt   { &:before { content: "\e152"; } }
+.roboto-sort-by-order          { &:before { content: "\e153"; } }
+.roboto-sort-by-order-alt      { &:before { content: "\e154"; } }
+.roboto-sort-by-attributes     { &:before { content: "\e155"; } }
+.roboto-sort-by-attributes-alt { &:before { content: "\e156"; } }
+.roboto-unchecked              { &:before { content: "\e157"; } }
+.roboto-expand                 { &:before { content: "\e158"; } }
+.roboto-collapse-down          { &:before { content: "\e159"; } }
+.roboto-collapse-up            { &:before { content: "\e160"; } }
+.roboto-log-in                 { &:before { content: "\e161"; } }
+.roboto-flash                  { &:before { content: "\e162"; } }
+.roboto-log-out                { &:before { content: "\e163"; } }
+.roboto-new-window             { &:before { content: "\e164"; } }
+.roboto-record                 { &:before { content: "\e165"; } }
+.roboto-save                   { &:before { content: "\e166"; } }
+.roboto-open                   { &:before { content: "\e167"; } }
+.roboto-saved                  { &:before { content: "\e168"; } }
+.roboto-import                 { &:before { content: "\e169"; } }
+.roboto-export                 { &:before { content: "\e170"; } }
+.roboto-send                   { &:before { content: "\e171"; } }
+.roboto-floppy-disk            { &:before { content: "\e172"; } }
+.roboto-floppy-saved           { &:before { content: "\e173"; } }
+.roboto-floppy-remove          { &:before { content: "\e174"; } }
+.roboto-floppy-save            { &:before { content: "\e175"; } }
+.roboto-floppy-open            { &:before { content: "\e176"; } }
+.roboto-credit-card            { &:before { content: "\e177"; } }
+.roboto-transfer               { &:before { content: "\e178"; } }
+.roboto-cutlery                { &:before { content: "\e179"; } }
+.roboto-header                 { &:before { content: "\e180"; } }
+.roboto-compressed             { &:before { content: "\e181"; } }
+.roboto-earphone               { &:before { content: "\e182"; } }
+.roboto-phone-alt              { &:before { content: "\e183"; } }
+.roboto-tower                  { &:before { content: "\e184"; } }
+.roboto-stats                  { &:before { content: "\e185"; } }
+.roboto-sd-video               { &:before { content: "\e186"; } }
+.roboto-hd-video               { &:before { content: "\e187"; } }
+.roboto-subtitles              { &:before { content: "\e188"; } }
+.roboto-sound-stereo           { &:before { content: "\e189"; } }
+.roboto-sound-dolby            { &:before { content: "\e190"; } }
+.roboto-sound-5-1              { &:before { content: "\e191"; } }
+.roboto-sound-6-1              { &:before { content: "\e192"; } }
+.roboto-sound-7-1              { &:before { content: "\e193"; } }
+.roboto-copyright-mark         { &:before { content: "\e194"; } }
+.roboto-registration-mark      { &:before { content: "\e195"; } }
+.roboto-cloud-download         { &:before { content: "\e197"; } }
+.roboto-cloud-upload           { &:before { content: "\e198"; } }
+.roboto-tree-conifer           { &:before { content: "\e199"; } }
+.roboto-tree-deciduous         { &:before { content: "\e200"; } }
+.roboto-cd                     { &:before { content: "\e201"; } }
+.roboto-save-file              { &:before { content: "\e202"; } }
+.roboto-open-file              { &:before { content: "\e203"; } }
+.roboto-level-up               { &:before { content: "\e204"; } }
+.roboto-copy                   { &:before { content: "\e205"; } }
+.roboto-paste                  { &:before { content: "\e206"; } }
+// The following 2 robotos are omitted for the time being because
+// they currently use Unicode codepoints that are outside the
+// Basic Multilingual Plane (BMP). Older buggy versions of WebKit can't handle
+// non-BMP codepoints in CSS string escapes, and thus can't display these two icons.
+// Notably, the bug affects some older versions of the Android Browser.
+// More info: https://github.com/twbs/bootstrap/issues/10106
+// .roboto-door                   { &:before { content: "\1f6aa"; } }
+// .roboto-key                    { &:before { content: "\1f511"; } }
+.roboto-alert                  { &:before { content: "\e209"; } }
+.roboto-equalizer              { &:before { content: "\e210"; } }
+.roboto-king                   { &:before { content: "\e211"; } }
+.roboto-queen                  { &:before { content: "\e212"; } }
+.roboto-pawn                   { &:before { content: "\e213"; } }
+.roboto-bishop                 { &:before { content: "\e214"; } }
+.roboto-knight                 { &:before { content: "\e215"; } }
+.roboto-baby-formula           { &:before { content: "\e216"; } }
+.roboto-tent                   { &:before { content: "\26fa"; } }
+.roboto-blackboard             { &:before { content: "\e218"; } }
+.roboto-bed                    { &:before { content: "\e219"; } }
+.roboto-apple                  { &:before { content: "\f8ff"; } }
+.roboto-erase                  { &:before { content: "\e221"; } }
+.roboto-hourglass              { &:before { content: "\231b"; } }
+.roboto-lamp                   { &:before { content: "\e223"; } }
+.roboto-duplicate              { &:before { content: "\e224"; } }
+.roboto-piggy-bank             { &:before { content: "\e225"; } }
+.roboto-scissors               { &:before { content: "\e226"; } }
+.roboto-bitcoin                { &:before { content: "\e227"; } }
+.roboto-btc                    { &:before { content: "\e227"; } }
+.roboto-xbt                    { &:before { content: "\e227"; } }
+.roboto-yen                    { &:before { content: "\00a5"; } }
+.roboto-jpy                    { &:before { content: "\00a5"; } }
+.roboto-ruble                  { &:before { content: "\20bd"; } }
+.roboto-rub                    { &:before { content: "\20bd"; } }
+.roboto-scale                  { &:before { content: "\e230"; } }
+.roboto-ice-lolly              { &:before { content: "\e231"; } }
+.roboto-ice-lolly-tasted       { &:before { content: "\e232"; } }
+.roboto-education              { &:before { content: "\e233"; } }
+.roboto-option-horizontal      { &:before { content: "\e234"; } }
+.roboto-option-vertical        { &:before { content: "\e235"; } }
+.roboto-menu-hamburger         { &:before { content: "\e236"; } }
+.roboto-modal-window           { &:before { content: "\e237"; } }
+.roboto-oil                    { &:before { content: "\e238"; } }
+.roboto-grain                  { &:before { content: "\e239"; } }
+.roboto-sunglasses             { &:before { content: "\e240"; } }
+.roboto-text-size              { &:before { content: "\e241"; } }
+.roboto-text-color             { &:before { content: "\e242"; } }
+.roboto-text-background        { &:before { content: "\e243"; } }
+.roboto-object-align-top       { &:before { content: "\e244"; } }
+.roboto-object-align-bottom    { &:before { content: "\e245"; } }
+.roboto-object-align-horizontal{ &:before { content: "\e246"; } }
+.roboto-object-align-left      { &:before { content: "\e247"; } }
+.roboto-object-align-vertical  { &:before { content: "\e248"; } }
+.roboto-object-align-right     { &:before { content: "\e249"; } }
+.roboto-triangle-right         { &:before { content: "\e250"; } }
+.roboto-triangle-left          { &:before { content: "\e251"; } }
+.roboto-triangle-bottom        { &:before { content: "\e252"; } }
+.roboto-triangle-top           { &:before { content: "\e253"; } }
+.roboto-console                { &:before { content: "\e254"; } }
+.roboto-superscript            { &:before { content: "\e255"; } }
+.roboto-subscript              { &:before { content: "\e256"; } }
+.roboto-menu-left              { &:before { content: "\e257"; } }
+.roboto-menu-right             { &:before { content: "\e258"; } }
+.roboto-menu-down              { &:before { content: "\e259"; } }
+.roboto-menu-up                { &:before { content: "\e260"; } }
